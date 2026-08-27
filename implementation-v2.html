@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Builders ID — Komunitas Vibe Coder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--canvas:#fffaf0;--surface-soft:#faf5e8;--surface-card:#f5f0e0;--surface-strong:#ebe6d6;--ink:#0a0a0a;--ink-soft:#3a3a3a;--ink-faint:#6a6a6a;--on-dark:#fffaf0;--brand-pink:#ff4d8b;--brand-teal:#1a3a3a;--brand-lavender:#b8a4ed;--brand-peach:#ffb084;--brand-ochre:#e8b94a;--brand-mint:#a4d4c5;--brand-coral:#ff6b5a;--note-yellow:#f2e1bf;--note-green:#dceae4;--note-pink:#f6dbe6;--note-orange:#f8dcc8;--note-blue:#e6dff7;--note-purple:#ddccf0;--note-featured:#1a3a3a;--hairline-ink:hsl(220 15% 18% / .14);--hairline-flat:#e5e5e5;--r-sketch:2px 8px 4px 12px;--r-sticky:2px 8px 12px 4px;--r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:24px;--r-pill:9999px;--sketch-shadow:2px 4px 10px hsl(220 15% 18% / .14);--lift-shadow:3px 6px 18px hsl(220 15% 18% / .2)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:hidden}body{margin:0;color:var(--ink);background:var(--canvas);font:400 16px/1.55 'Space Grotesk',sans-serif;overflow-x:hidden}.bg-dotgrid{background-image:radial-gradient(circle,hsl(220 15% 18% / .1) 1.2px,transparent 1.2px);background-size:24px 24px}h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;font-weight:600;line-height:1.05;letter-spacing:-1.5px;margin:0}h1{font-size:clamp(48px,7vw,96px);font-weight:700;letter-spacing:-2.5px}h2{font-size:clamp(36px,5vw,64px)}h3{font-size:clamp(28px,3.6vw,40px)}h4{font-size:18px}.container{width:min(1280px,100%);margin:auto;padding:0 24px}.section{padding:96px 0}.center{text-align:center}.muted{color:var(--ink-soft)}.faint{color:var(--ink-faint)}.lead{font-size:19px;line-height:1.5;max-width:680px;color:var(--ink-soft);margin:14px 0 0}.section-tag,.mono-eyebrow{display:inline-block;font:600 12.5px/1.4 'Space Grotesk';letter-spacing:1.5px;text-transform:uppercase}.section-tag{font-family:'Permanent Marker';font-size:18px;letter-spacing:.01em;color:var(--brand-coral);transform:rotate(-1.5deg);text-transform:none}.rough-underline{background:linear-gradient(transparent 62%,var(--brand-coral) 62%,var(--brand-coral) 86%,transparent 86%)}.hl-blue,.hl-lavender{background:linear-gradient(transparent 58%,var(--brand-lavender) 58%,var(--brand-lavender) 88%,transparent 88%)}
+.lp-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--surface-soft) 86%,transparent);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}.lp-header .container{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}.brand-tile{width:44px;height:44px;border-radius:var(--r-md);background:var(--brand-teal);color:var(--on-dark);display:grid;place-items:center;font-weight:700;font-size:16px}.brand-logo{display:none}.brand-word{font-weight:700;font-size:20px;letter-spacing:-.5px}.lp-nav{display:flex;align-items:center;gap:26px}.navlink{text-decoration:none;color:var(--ink);font-weight:600}.navlink:hover{color:var(--brand-coral)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border:2px solid var(--ink);border-radius:var(--r-sm);background:var(--ink);color:var(--on-dark);text-decoration:none;font:700 15px/1 'Space Grotesk';transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:var(--lift-shadow)}.btn-ghost{background:transparent;color:var(--ink)}.btn-coral{background:var(--brand-coral)}.btn-lavender{background:var(--brand-lavender)}.btn-mint{background:var(--brand-mint)}.btn-sm{padding:10px 14px;font-size:14px}.pill{display:inline-block;padding:7px 12px;border-radius:var(--r-pill);font-weight:600}.pill-coral{background:var(--brand-coral)}
+.hero{padding:90px 0 72px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.hero h1 .red{color:var(--brand-coral)}.hero-sub{font-size:19px;max-width:560px;margin:22px 0 30px;color:var(--ink-soft)}.hero-cta{display:flex;gap:14px;flex-wrap:wrap}.hero-collage{position:relative;min-height:390px}.sticky{position:relative;border-radius:var(--r-sticky);box-shadow:var(--sketch-shadow);padding:22px 22px 26px;transition:.22s}.sticky:hover{transform:rotate(0deg) scale(1.025)!important;box-shadow:var(--lift-shadow)}.tape-top:before{content:'';position:absolute;top:-11px;left:50%;transform:translateX(-50%) rotate(-2deg);width:78px;height:22px;background:#eadfc8;border:1px solid #cfc2a8;border-radius:2px}.note-yellow{background:var(--note-yellow)}.note-green{background:var(--note-green)}.note-pink{background:var(--note-pink)}.note-blue{background:var(--note-blue)}.note-orange{background:var(--note-orange)}.note-purple{background:var(--note-purple)}.accent{position:absolute;pointer-events:none}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:34px}.feat h3{font-size:24px;margin:10px 0 8px}.feat p{font-size:14px;color:var(--ink-soft)}.reveal{opacity:0;transform:translateY(16px);transition:.5s}.reveal.in{opacity:1;transform:none}.statline{display:flex;align-items:center;justify-content:center;gap:28px}.bigstat{font-size:clamp(56px,9vw,96px);font-weight:700;color:var(--brand-coral);line-height:1}.marquee{overflow:hidden;padding:18px 0;background:var(--surface-strong)}.marquee-track{display:flex;width:max-content;gap:14px;animation:scroll 52s linear infinite}.marquee-track.rev{animation-direction:reverse}@keyframes scroll{to{transform:translateX(-50%)}}.company-chip,.logo-pill{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;background:var(--surface-card);border:1px solid var(--hairline-flat);border-radius:var(--r-md);padding:9px 14px;font-weight:600}.mono{display:grid;place-items:center;width:28px;height:28px;border-radius:6px;color:#fff;font-weight:700;font-size:13px}.logo-pill{border-radius:var(--r-pill);font-size:14px}.logo-pill .dot{width:9px;height:9px;border-radius:50%}
+.band{padding:96px 0;background:var(--surface-soft)}.band>.container{background:var(--surface-soft);border-radius:var(--r-xl)}.band h2{margin-top:10px}.band .section-tag{color:var(--brand-coral)}.band .sketch-border{background:var(--brand-teal);color:var(--on-dark);border:0;border-radius:var(--r-xl)}
+.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:42px}.tier{display:flex;flex-direction:column;background:var(--surface-card);border:1px solid var(--hairline-flat);border-radius:var(--r-xl);padding:28px 24px;min-height:430px}.tier.feature{background:var(--note-featured);color:var(--on-dark);border-color:var(--brand-teal)}.tname{font-size:24px;font-weight:600}.price{font-size:30px;font-weight:700;margin-top:16px}.cur,.ptype{font-size:14px;font-weight:500}.ptype{color:var(--ink-faint)}.tier.feature .ptype{color:#d8e6df}.tier ul{list-style:none;padding:22px 0;margin:0;display:grid;gap:12px;flex:1}.ck{color:var(--brand-mint);font-weight:700}.off{color:var(--ink-faint)}.ribbon{position:absolute;top:16px;right:16px;background:var(--brand-coral);color:#fff;padding:6px 10px;border-radius:var(--r-sm);font:600 11px 'Space Grotesk';letter-spacing:1px}.baapwu-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}.psp{display:grid;gap:14px;margin-top:26px}.psp-row{display:flex;align-items:center;gap:14px}.badge{padding:7px 12px;border-radius:var(--r-sticky);font-family:'Permanent Marker';font-size:16px;flex:none}.ph{display:grid;place-items:center;border:2px dashed var(--hairline-ink);background:var(--surface-strong);border-radius:var(--r-md);color:var(--ink-faint)}.faq{max-width:760px;margin:34px auto 0;display:grid;gap:12px}.qa{background:var(--surface-card);border:2px solid var(--hairline-flat);border-radius:var(--r-lg);padding:20px 22px}.qa summary{cursor:pointer;list-style:none;font-size:18px;font-weight:600;display:flex;justify-content:space-between}.qa summary::-webkit-details-marker{display:none}.plus{font:26px/1 'Permanent Marker';color:var(--brand-coral);transition:.2s}.qa[open] .plus{transform:rotate(45deg)}.ans{margin-top:12px;color:var(--ink-soft)}.cta-band{margin:0 auto 96px;max-width:1280px;padding:80px 24px;border-radius:var(--r-xl);background:var(--surface-soft);text-align:center}.lp-footer{background:var(--surface-soft);padding:72px 0 28px;border-top:1px solid var(--hairline-flat)}.foot-grid{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:28px}.lp-footer h4{font:600 12.5px 'Space Grotesk';letter-spacing:1.5px;text-transform:uppercase;margin-bottom:14px}.lp-footer a{display:block;color:var(--ink-soft);text-decoration:none;font-size:14px;margin:9px 0}.lp-footer a:hover{color:var(--brand-coral)}.foot-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--hairline-flat);margin-top:42px;padding-top:18px;color:var(--ink-faint);font-size:14px}
+@media(max-width:1024px){.tiers{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:repeat(2,1fr)}}@media(max-width:768px){.lp-nav .navlink{display:none}.hero-grid,.baapwu-grid{grid-template-columns:1fr}.hero{padding-top:60px}.hero-collage{min-height:420px}.features,.tiers{grid-template-columns:1fr}.statline{align-items:flex-start;flex-direction:column;gap:12px}.band>.container{padding:0 24px}.foot-grid{grid-template-columns:repeat(2,1fr)}.foot-bottom{flex-direction:column}.section{padding:72px 0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+
+</head>
+<body class="bg-dotgrid">
+
+<!-- ============ HEADER ============ -->
+<header class="lp-header">
+  <div class="container">
+    <a class="brand" href="#top">
+      <span class="brand-tile">ab</span>
+      <span class="brand-word">aibuilders<span class="dot">.id</span></span>
+    </a>
+    <nav class="lp-nav">
+      <a class="navlink" href="#about">Tentang</a>
+      <a class="navlink" href="#pricing">Harga</a>
+      <a class="navlink" href="#baapwu">BAAPWU</a>
+      <a class="navlink" href="#faq">FAQ</a>
+      <a class="btn btn-ghost btn-sm" href="aibuilders/platform/AI Builders ID - Platform.html">Masuk</a>
+      <a class="btn btn-sm" href="#pricing">Gabung →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="reveal in">
+      <span class="mono-eyebrow">🚀 Komunitas vibe coder #1 di Indonesia</span>
+      <h1 style="margin-top:18px;">Bangun aplikasi AI <span class="red">tanpa</span> jago ngoding.</h1>
+      <p class="hero-sub">Dari ide mentah jadi aplikasi yang <span class="rough-underline">benar-benar jalan</span>. Belajar bareng, ngebuild bareng, deploy bareng — semua dari satu war room.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#pricing">Jadi Member Eksklusif</a>
+        <a class="btn btn-ghost" href="#community">Gabung Komunitas Gratis →</a>
+      </div>
+      <p class="faint" style="margin-top:18px;font-size:14px;">Lifetime access · Bayar sekali · Tanpa langganan</p>
+    </div>
+
+    <div class="hero-collage">
+      <!-- hand-drawn accents -->
+      <svg class="accent" style="top:-20px;left:30px;width:180px;" viewBox="0 0 180 90" fill="none">
+        <ellipse cx="90" cy="45" rx="84" ry="38" stroke="hsl(355 70% 50%)" stroke-width="2.5" stroke-dasharray="7 7" opacity="0.5" transform="rotate(-6 90 45)"></ellipse>
+      </svg>
+      <div class="sticky note-yellow tape-top" style="top:10px;left:0;transform:rotate(-4deg);">
+        <strong style="font-size:15px;">Ideate dengan AI</strong>
+        <p style="margin:6px 0 0;font-size:13px;">Generate PRD, mindmap &amp; flowchart dari ngobrol biasa.</p>
+      </div>
+      <div class="sticky note-blue tape-top" style="top:120px;right:0;transform:rotate(3deg);">
+        <strong style="font-size:15px;">Deploy 1-klik</strong>
+        <p style="margin:6px 0 0;font-size:13px;">namaproyek.aibuilders.app langsung live.</p>
+      </div>
+      <div class="sticky note-pink" style="top:240px;left:24px;transform:rotate(-2deg);">
+        <strong style="font-size:15px;">Live mingguan</strong>
+        <p style="margin:6px 0 0;font-size:13px;">Ngebuild bareng mentor tiap Sabtu &amp; Minggu.</p>
+      </div>
+      <svg class="accent" style="bottom:0;right:30px;width:120px;" viewBox="0 0 120 80" fill="none">
+        <path d="M8 70 C 40 20, 80 20, 108 40" stroke="hsl(220 65% 45%)" stroke-width="2.5" fill="none" opacity="0.5"></path>
+        <path d="M108 40 l -14 -3 m 14 3 l -5 13" stroke="hsl(220 65% 45%)" stroke-width="2.5" fill="none" opacity="0.5"></path>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / WHY ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <span class="section-tag">Kenapa AI Builders?</span>
+    <h2>Tutorial doang nggak bikin kamu <span class="rough-underline">selesai</span>.</h2>
+    <p class="lead">Kamu nonton 100 tutorial tapi proyekmu masih draft. Di sini kita ubah caranya — dari belajar pasif jadi ngebuild aktif bareng komunitas.</p>
+
+    <div class="features">
+      <div class="sticky note-orange feat reveal"><span class="feat-ic">🧩</span><h3>Masalah</h3><p>Ide banyak, eksekusi mentok. Belajar sendirian gampang nyerah di tengah jalan.</p></div>
+      <div class="sticky note-green feat reveal"><span class="feat-ic">💡</span><h3>Solusi</h3><p>Workflow ideate → build → deploy yang dipandu, plus tools AI &amp; plugin Blinker untuk VS Code.</p></div>
+      <div class="sticky note-blue feat reveal"><span class="feat-ic">📈</span><h3>Bukti</h3><p>Ribuan member sudah nge-ship aplikasi pertamanya. Giliran kamu sekarang.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT ============ -->
+<section class="section" style="padding-top:0;">
+  <div class="container center">
+    <div class="statline">
+      <span class="bigstat">1.400+</span>
+      <span style="font-size:22px;max-width:360px;text-align:left;" class="muted">builder aktif ngebuild &amp; nge-ship dari komunitas ini.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO JOINED (social proof) ============ -->
+<section class="section" style="padding-bottom:40px;" id="builders">
+  <div class="container center" style="margin-bottom:30px;">
+    <span class="section-tag">Siapa aja yang udah gabung?</span>
+    <h2><span class="rough-underline">Builders.</span> Bukan hype chasers.</h2>
+    <p class="lead" style="margin:10px auto 0;">Engineers, founders, PMs, &amp; AI specialists dari ratusan top companies di Indonesia.</p>
+  </div>
+</section>
+<div class="marquee" style="background:var(--surface-strong);padding:18px 0;">
+  <div class="marquee-track" id="coTrack1" style="animation-duration:52s;"></div>
+</div>
+<div class="marquee" style="background:var(--surface-strong);border-top:none;padding:18px 0;">
+  <div class="marquee-track rev" id="coTrack2"></div>
+</div>
+
+<!-- ============ FREE COMMUNITY BAND ============ -->
+<section class="band" id="community">
+  <div class="container section" style="display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center;">
+    <div>
+      <span class="section-tag">Gratis, selamanya</span>
+      <h2>Mulai dari grup WhatsApp.</h2>
+      <p style="font-size:18px;opacity:0.85;max-width:520px;margin-top:10px;">Diskusi harian, sharing tools AI terbaru, dan ngobrol bareng builder lain. Nggak perlu bayar buat mulai.</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;">
+        <a class="btn btn-mint" href="#">Gabung Grup WhatsApp →</a>
+      </div>
+    </div>
+    <div class="sketch-border" style="padding:24px;">
+      <h4 style="font-family:'Permanent Marker';font-size:18px;color:var(--on-dark);margin-bottom:14px;">Yang kamu dapat:</h4>
+      <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;font-size:15px;opacity:0.9;">
+        <li>📰 Broadcast berita AI tiap hari</li>
+        <li>🤝 Networking sesama vibe coder</li>
+        <li>🎁 Akses early ke event &amp; promo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="center" style="margin:0 auto;max-width:640px;">
+      <span class="section-tag">Pilih Paketmu</span>
+      <h2>Bayar sekali. Akses <span class="rough-underline">selamanya</span>.</h2>
+      <p class="lead" style="margin:8px auto 0;">Semua tier lifetime. Upgrade kapan aja dengan diskon 20%.</p>
+    </div>
+
+    <div class="tiers">
+      <!-- Basic -->
+      <div class="sketch-border tier">
+        <div class="tname">Basic</div>
+        <div class="price"><span class="cur">Rp</span>259.000</div>
+        <div class="ptype">Lifetime</div>
+        <ul>
+          <li><span class="ck">✓</span> Plugin Blinker VS Code</li>
+          <li><span class="ck">✓</span> Modul &amp; live Basic</li>
+          <li><span class="ck">✓</span> Live tiap Sabtu 08.30</li>
+          <li><span class="ck">✓</span> Build · Marketplace · Deploy</li>
+          <li class="off"><span class="no">—</span> Modul Advanced</li>
+          <li class="off"><span class="no">—</span> Konsultasi 1-on-1</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">Daftar</a>
+      </div>
+      <!-- Advanced Regular -->
+      <div class="sketch-border tier">
+        <div class="tname">Advanced Regular</div>
+        <div class="price"><span class="cur">Rp</span>1,5<span class="cur">jt</span></div>
+        <div class="ptype">Lifetime</div>
+        <ul>
+          <li><span class="ck">✓</span> Semua benefit Basic</li>
+          <li><span class="ck">✓</span> Modul &amp; live Advanced</li>
+          <li><span class="ck">✓</span> Live tiap Minggu 08.30</li>
+          <li><span class="ck">✓</span> Diskon upgrade 20%</li>
+          <li class="off"><span class="no">—</span> Konsultasi 1-on-1</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">Daftar</a>
+      </div>
+      <!-- Advanced VIP (feature) -->
+      <div class="sketch-border tier feature" style="position:relative;">
+        <span class="ribbon">PALING LARIS</span>
+        <div class="tname">Advanced VIP</div>
+        <div class="price"><span class="cur">Rp</span>3<span class="cur">jt</span></div>
+        <div class="ptype">Lifetime</div>
+        <ul>
+          <li><span class="ck">✓</span> Semua benefit Advanced</li>
+          <li><span class="ck">✓</span> Konsultasi 2x / bulan</li>
+          <li><span class="ck">✓</span> Booking via cal.com</li>
+          <li><span class="ck">✓</span> Prioritas Help Center</li>
+        </ul>
+        <a class="btn" href="#">Daftar VIP</a>
+      </div>
+      <!-- Add-on -->
+      <div class="sketch-border tier">
+        <div class="tname">Add-on Konsultasi</div>
+        <div class="price"><span class="cur">Rp</span>1,5<span class="cur">jt</span></div>
+        <div class="ptype">Slot tambahan</div>
+        <ul>
+          <li><span class="ck">✓</span> Slot konsultasi ekstra</li>
+          <li class="faint" style="font-size:13px;">Khusus member Advanced VIP yang kuota bulanannya habis.</li>
+        </ul>
+        <a class="btn btn-ghost" href="#">Tambah</a>
+      </div>
+    </div>
+    <p class="faint center" style="margin-top:20px;font-size:13px;">*Harga dalam IDR. Pembayaran aman via Goakal.com.</p>
+  </div>
+</section>
+
+<!-- ============ BAAPWU ============ -->
+<section class="section" id="baapwu" style="border-top:2px solid var(--ink);">
+  <div class="container baapwu-grid">
+    <div>
+      <span class="section-tag">BAAPWU</span>
+      <h2>Build An AI App <span class="hl-lavender">With Us</span>.</h2>
+      <p class="lead" style="margin-top:10px;">Program pendampingan intensif. Kita bedah idemu, susun roadmap, dan dampingi sampai aplikasimu beneran live.</p>
+      <div class="psp">
+        <div class="psp-row"><span class="badge" style="background:var(--note-orange);">Masalah</span><p style="margin:0;color:var(--ink-soft);">Punya ide tapi bingung mulai dari mana dan ke mana arahnya.</p></div>
+        <div class="psp-row"><span class="badge" style="background:var(--note-green);">Solusi</span><p style="margin:0;color:var(--ink-soft);">Sesi discovery 1-on-1 + roadmap teknis yang dikerjakan bareng.</p></div>
+        <div class="psp-row"><span class="badge" style="background:var(--note-blue);">Bukti</span><p style="margin:0;color:var(--ink-soft);">Banyak proyek lulus dari draft jadi produk yang dipakai user nyata.</p></div>
+      </div>
+      <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a class="btn btn-lavender" href="#">Book Discovery Call (GRATIS) →</a>
+      </div>
+    </div>
+    <div class="sticky note-purple tape-top" style="transform:rotate(2deg);padding:30px;">
+      <h3 style="font-size:24px;margin-bottom:14px;">Sesi pertama gratis</h3>
+      <p style="color:var(--ink-soft);font-size:15px;">30 menit ngobrol soal idemu. Tanpa biaya, tanpa komitmen. Booking lewat cal.com dan langsung pilih jadwal.</p>
+      <div class="ph" style="height:150px;margin-top:18px;">[ kalender cal.com ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPONSORS MARQUEE ============ -->
+<section style="padding-top:48px;padding-bottom:0;">
+  <div class="container center" style="margin-bottom:22px;">
+    <span class="section-tag">Sponsor &amp; Partner</span>
+    <h2 style="font-size:30px;">Didukung oleh partner terbaik.</h2>
+  </div>
+</section>
+<div class="marquee">
+  <div class="marquee-track" id="logoTrack"></div>
+</div>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container center" style="max-width:760px;margin:0 auto;">
+    <span class="section-tag">Sering ditanya</span>
+    <h2>FAQ</h2>
+  </div>
+  <div class="faq">
+    <details class="qa" open=""><summary>Apa itu "vibe coding"? <span class="plus">+</span></summary><div class="ans">Bikin aplikasi dengan mengandalkan AI dan workflow yang tepat, bukan menghafal sintaks. Kamu fokus ke ide &amp; produk, AI bantu eksekusinya.</div></details>
+    <details class="qa"><summary>Apakah saya harus bisa coding dulu? <span class="plus">+</span></summary><div class="ans">Tidak. Banyak member kami mulai dari nol. Modul Basic dirancang untuk pemula total.</div></details>
+    <details class="qa"><summary>Apa bedanya tier Basic dan Advanced? <span class="plus">+</span></summary><div class="ans">Basic memberi akses modul &amp; live Basic. Advanced membuka modul Advanced, live Minggu, dan VIP menambah konsultasi 1-on-1.</div></details>
+    <details class="qa"><summary>Pembayarannya gimana? <span class="plus">+</span></summary><div class="ans">Sekali bayar untuk akses lifetime, lewat Goakal.com. Bisa upgrade kapan saja dengan diskon 20%.</div></details>
+    <details class="qa"><summary>Apa itu Blinker? <span class="plus">+</span></summary><div class="ans">Plugin VS Code eksklusif member yang menghubungkan proyekmu ke platform — ideate, sync, dan handoff langsung dari editor.</div></details>
+  </div>
+<section class="cta-band"><h2>Bayar sekali. Akses selamanya.</h2><a class="btn" href="#pricing" style="margin-top:24px;">Jadi Member Eksklusif</a></section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="lp-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" style="color:var(--on-dark);">
+          <span class="brand-tile">ab</span>
+          <span class="brand-word">aibuilders<span class="dot">.id</span></span>
+        </a>
+        <p style="opacity:0.7;font-size:14px;margin-top:14px;max-width:280px;">Komunitas &amp; platform buat kamu yang mau ngebuild aplikasi AI — dari ide sampai live.</p>
+      </div>
+      <div><h4>Produk</h4><a href="#pricing">Harga</a><a href="#baapwu">BAAPWU</a><a href="aibuilders/platform/AI Builders ID - Platform.html">Platform</a><a href="#">Blinker</a></div>
+      <div><h4>Komunitas</h4><a href="#community">Grup WhatsApp</a><a href="#">Event</a><a href="#">Affiliate</a></div>
+      <div><h4>Bantuan</h4><a href="#faq">FAQ</a><a href="#">Help Center</a><a href="#">Kontak</a></div>
+      <div><h4>Kontak</h4><a href="mailto:hello@aibuilders.id">hello@aibuilders.id</a><a href="tel:+6281292040183">+62 812-9204-0183</a></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 AI Builders ID · Part of Bahni &amp; Co. · PT Teknologi Tepat Sasaran</span>
+      <span>Pembayaran via Goakal.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Sponsor / partner marquee
+  const sponsors = [
+    ['goakal.com','#e23744'], ['ramadigital.id','#2d6cdf'], ['apipedia.id','#7c3aed'],
+    ['growthcircle.id','#0f9d58'], ['ionext.ai','#0891b2'], ['kolaborasi.co','#f97316'],
+    ['uchat.id','#db2777'], ['buildanyways.com','#0d9488'], ['rubythalib.ai','#dc2626'],
+    ['apiary.id','#ca8a04'], ['rafiqspace.ai','#4f46e5'], ['aiforproductivity.id','#059669'],
+    ['techarea.co.id','#0369a1']
+  ];
+  const track = document.getElementById('logoTrack');
+  const make = () => sponsors.map(([n,c]) =>
+    `<span class="logo-pill"><span class="dot" style="background:${c}"></span>${n}</span>`).join('');
+  track.innerHTML = make() + make();
+
+  // Companies whose builders have joined
+  const companies = [
+    'Deloitte','Accenture','Grab','Manulife','Alibaba Cloud','Cisco','Infosys','Dentsu',
+    'Bank Mandiri','BSI','AXA Mandiri','MNC Group','JNE','Erajaya','Flip.id','Nodeflux',
+    'Bahasa.ai','SawitPro','Synapsis.id','Jala','TipTip'
+  ];
+  const coColors = ['#23262e','#2d6cdf','#0f9d58','#e23744','#7c3aed','#0891b2','#f97316','#b45309'];
+  const initials = (s) => s.replace(/\.(id|ai|co)$/i,'').trim()[0].toUpperCase();
+  const coChip = (n,i) => `<span class="company-chip"><span class="mono" style="background:${coColors[i%coColors.length]}">${initials(n)}</span>${n}</span>`;
+  const half = Math.ceil(companies.length/2);
+  const rowA = companies.slice(0,half), rowB = companies.slice(half);
+  const buildRow = (arr) => { const html = arr.map((n,i)=>coChip(n,i)).join(''); return html+html; };
+  document.getElementById('coTrack1').innerHTML = buildRow(rowA);
+  document.getElementById('coTrack2').innerHTML = buildRow(rowB);
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((es)=>{
+    es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+
+</body></html>
