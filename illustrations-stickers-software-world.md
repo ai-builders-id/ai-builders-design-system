@@ -21,13 +21,14 @@ grain, and ribbon paths keep the composition tactile and human.
 Every object uses the same three-part construction:
 
 1. **Graphic core** — a flat, simplified software form with a decisive silhouette.
-2. **Die-cut rim** — a consistent cream or white border, approximately 3-5% of the object's
+2. **Die-cut rim** — a clean white border, approximately 3-5% of the object's
    shortest dimension. Internal gaps do not receive a second rim.
 3. **Contact shadow** — a short, soft, neutral shadow that separates layers without turning
    them into floating cards. Shadow direction stays consistent across the sheet.
 
 Edges may be subtly irregular, but never torn, fuzzy, curled, distressed, or visibly aged.
-The sticker is newly printed and confidently cut.
+The sticker is newly printed and confidently cut. Major foreground bodies are `#FFFFFF`; use
+`#FAF5E8` only for secondary surfaces or quiet inset areas.
 
 ### 2. Shape Language
 
@@ -168,14 +169,19 @@ visual, product explanation, or background.
 Exact visible title: "[EXACT TITLE]".
 
 Visualize [TOPIC-SPECIFIC SOFTWARE METAPHOR] as an interconnected miniature software world,
-rendered as if it were a sheet of die-cut vinyl stickers layered and slightly overlapping on
-a soft cream surface. Build the scene from physicalized browser windows, application panels,
+rendered as if it were a sheet of clean, premium die-cut vinyl stickers layered and slightly
+overlapping on a warm soft-cream surface. Build the scene from physicalized browser windows,
 dashboards, workflow nodes, agent stations, task queues, databases, API gateways, approval
 gates, testing checkpoints, deployment lanes, monitoring panels, and completed output
-surfaces — each element rendered as its own die-cut sticker shape with a clean cream or white
-border, optional Ink linework inside that border, and a soft cast shadow, as if peeled and
-stuck slightly askew. Use only the
-components relevant to the topic.
+surfaces — each element rendered as its own distinct die-cut sticker shape with a bright
+pure-white sticker foreground, clean white outer die-cut border, confident Ink outline where
+appropriate, and a soft restrained cast shadow, as if peeled and stuck slightly askew. Use
+only the components relevant to the topic.
+
+The background must remain warm cream while foreground stickers read as noticeably brighter
+pure-white vinyl. Do not make major sticker bodies cream, ivory, beige, yellowish white, pale
+gray, or the same color as the canvas. The white sticker layer must visibly pop against the
+warm cream surface.
 
 Use adaptive density. A simple topic may use fewer zones, but must still contain multiple
 connected sticker-software elements, visible system relationships, layered overlap depth, and
@@ -203,12 +209,21 @@ glance, with the grain only visible on close inspection. No gradients used as a 
 for the grain. The scene must read as a crisp, new, flat sticker sheet — never as worn,
 creased, crumpled, faded, or aged material.
 
-Palette — Whiteboard system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
-surface; Ink #0A0A0A for outlines, titles, and structural linework; Ink Faint #6A6A6A for
-secondary sticker details and grain shadow. Use controlled but clearly visible accent hues on
-focal stickers, panels, workflow nodes, and status details, drawn only from: Brand Pink
+Palette — Whiteboard system: Canvas Cream #FFFAF0 is the primary background and negative
+space. Sticker White #FFFFFF is the primary foreground body for die-cut cards, browser
+windows, application panels, and major software surfaces. Surface Soft #FAF5E8 is restricted
+to secondary board surfaces, quiet inset areas, and disabled states; never use it as a major
+foreground body. Ink #0A0A0A is for titles, keylines, icons, and structural linework; Ink
+Faint #6A6A6A is for secondary details and subtle grain shadow. Use controlled but clearly
+visible accent hues on focal controls, workflow states, headers, nodes, status indicators,
+and selected interface elements, drawn only from: Brand Pink
 #FF4D8B, Brand Teal #1A3A3A, Brand Lavender #B8A4ED, Brand Peach #FFB084, Brand Ochre #E8B94A,
 Brand Mint #A4D4C5, Brand Coral #FF6B5A. Do not introduce hues outside this set.
+
+Keep approximately 60-70% of structural sticker surfaces pure white, 20-30% in controlled
+accent fills, and the remainder in Ink details. For colored objects use: accent fill, optional
+Ink linework, white die-cut rim, then contact shadow. For white software surfaces use:
+pure-white fill, thin Ink keyline, optional narrow white safety edge, then contact shadow.
 
 Use colored ribbon-sticker connector strips (like a strip of washi tape or a colored sticker
 banner) to communicate data, orchestration, task movement, approvals, and system connections
@@ -220,7 +235,8 @@ die-cut outline. No glass, no resin, no glossy acrylic, no painted metal, no chr
 3D-rendered depth, no soft-shadow-heavy claymorphism.
 
 Place the exact uppercase title flat in clean upper-left negative space, styled as one large
-hero sticker or a flat title lockup with its own subtle outline. The title should occupy
+hero sticker or a flat title lockup with its own subtle outline. The title sticker uses
+Sticker White #FFFFFF and must clearly contrast with Canvas Cream #FFFAF0. It should occupy
 approximately 25-35% of the composition and remain readable at thumbnail size. Use Ink
 #0A0A0A by default, set in a tight, confident geometric sans (not handwriting). Add no other
 visible text unless explicitly requested. A small handwritten-marker annotation (a short
@@ -233,7 +249,8 @@ texture, botanical decoration, watercolor, cool blush-gray or neon rainbow palet
 black backgrounds, cyberpunk, uncontrolled neon, generic corporate offices, any human or
 humanoid figures, hands, robots, robot heads, circuit boards, electrical cables, plugs,
 switches, relays, server racks, industrial machinery, real logos, watermarks, garbled text,
-unrelated labels, decorative code, and fake data.
+unrelated labels, decorative code, fake data, or foreground stickers that blend into the
+cream canvas.
 
 Output: [DIMENSIONS AND ASPECT RATIO]. Recompose the sticker world specifically for that
 canvas; do not make a blind crop of another format.
@@ -253,14 +270,21 @@ canvas; do not make a blind crop of another format.
 - Primary direction: AI Builders Sticker-Sheet Software World.
 - Density policy: adaptive density with a minimum of multiple connected, overlapping sticker elements.
 - Depth comes from sticker overlap and layered shadow, not architectural recession.
+- Foreground sticker surfaces use Sticker White #FFFFFF; the background remains Canvas Cream
+  #FFFAF0.
 - Grain/film-texture stays fine and subtle — a light tooth visible only on close inspection, never heavy, rough, or worn.
 - Keep a clear title zone and an interconnected sticker cluster as the visual core.
 - Use ribbon-sticker connectors for system movement; never electrical wiring or light-trails.
+- Use white foreground stickers as the dominant structural layer, with controlled accent
+  colors providing hierarchy.
 - No human figures; suggest activity only through optional non-human markers (cursor, spinner, checkmark, motion-trail).
 
 ## Review Checklist
 
 - [ ] The scene reads as a layered sheet of die-cut stickers, not a 3D diorama or isometric room.
+- [ ] Foreground sticker bodies are bright pure white #FFFFFF.
+- [ ] Background remains warm cream #FFFAF0 and is visibly darker/warmer than the stickers.
+- [ ] Surface Soft #FAF5E8 appears only in secondary or inset areas.
 - [ ] Film-grain is fine and subtle — visible only on close inspection; the sheet reads crisp and new, not worn, creased, or faded.
 - [ ] Adaptive density matches the topic without becoming sparse or empty.
 - [ ] The exact title occupies roughly 25-35% and reads at thumbnail size.

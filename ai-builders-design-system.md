@@ -213,8 +213,11 @@ cream canvas, ink, accent palette, and anti-gloss restraint, but they serve diff
 
 Use sticker illustrations as static visual assets that feel physically attached to the page.
 They belong beside copy, inside article covers, in feature explanations, and around workflow
-diagrams. Keep the canonical flat-on or slight top-down view, die-cut outline, restrained
-grain, small rotation, and soft cast shadow. Sticker density should follow topic complexity,
+diagrams. Keep the canonical flat-on or slight top-down view, bright-white `#FFFFFF`
+foreground sticker bodies against the warm cream `#FFFAF0` canvas, clean die-cut edges,
+restrained grain, small rotation, thin Ink keylines where needed, and soft cast shadows.
+Reserve `#FAF5E8` for secondary or inset surfaces rather than major sticker bodies. Sticker
+density should follow topic complexity,
 but the title zone and system relationships must remain legible at thumbnail size.
 
 Stickers may use a subtle entrance reveal or hover lift, but they should settle quickly. Do

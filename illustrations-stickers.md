@@ -9,14 +9,23 @@ decorate.
 ## Core Language
 
 - Flat-on or slight top-down camera; depth comes from overlap, not a room or diorama.
-- Every object has a flat graphic core, cream/white die-cut rim, and short soft contact shadow.
+- Major foreground objects use a pure-white vinyl body `#FFFFFF`, a clean die-cut edge, and a
+  short soft contact shadow. Accent objects may use a brand-color body with the same white rim.
 - Use distinct silhouettes for inputs, processing, data, approvals, and outputs.
 - Use ribbon-sticker connectors for relationships; never cables, glowing trails, or wiring.
 - Keep grain fine and new-looking, like fresh printed vinyl; never distressed or worn.
-- Use the defined cream, ink, and seven brand hues only. Teal is one featured signal.
+- Use the defined cream, white, ink, and seven brand hues only. Teal is one featured signal.
 - No humans, humanoids, robots, fake text, logos, watermarks, or decorative electronics.
 
 ## Composition System
+
+Keep roughly 60-70% of structural sticker surface pure white, 20-30% in controlled accent
+fills, and the remainder in ink/detail treatment. Use `#FAF5E8` only for secondary board
+surfaces, inset areas, or quiet disabled states; never use it as the primary foreground body.
+
+For white-on-white construction, use pure-white fill, a thin Ink keyline where needed, an
+optional narrow white safety edge, then a restrained contact shadow. Do not solve separation
+with gray, beige, or heavy outlines.
 
 Choose one: pipeline, constellation, workbench, before/after bridge, or layer stack. Establish
 one hero object, a traceable main route, and adaptive density. Primary stickers may overlap
