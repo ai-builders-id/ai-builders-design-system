@@ -21,24 +21,29 @@ components relevant to the topic.
 
 Use adaptive density. A simple topic may use fewer zones, but must still contain multiple
 connected sticker-software elements, visible system relationships, layered overlap depth, and
-a purposeful miniature narrative. A complex topic may fill the frame edge-to-edge like a
-well-loved sticker sheet, while staying legible — never let it collapse into a few isolated
-icons floating in empty space.
+a purposeful miniature composition. A complex topic may fill the frame edge-to-edge like a
+densely packed sticker sheet, while staying legible — never let it collapse into a few
+isolated icons floating in empty space.
 
-Populate the scene with small human software builders, drawn as their own flat sticker
-characters (simple, friendly, slightly bold outline, subtle grain shading) who assemble,
-inspect, review, test, deploy, and operate the system. People are subordinate narrative
-clues, layered in among the software stickers, never the dominant subject.
+Do not include any human figures, characters, hands, or body parts of any kind, cartoon or
+otherwise. Keep the scene entirely about the software elements themselves. To suggest the
+system is active and in motion, use small non-human activity markers instead: a cursor/pointer
+sticker resting on a panel, a small "in progress" spinner sticker on a checkpoint, a checkmark
+sticker on an approval gate, a subtle motion-trail along a connector. These markers are
+optional accents, not a focal subject — if the scene reads better calm and static, omit them
+entirely.
 
 Camera: flat-on or very slight top-down tilt, like looking directly at a sticker sheet or a
 laptop lid — not a deep 3/4 isometric room. Depth comes from sticker overlap, layered
 shadow, and z-order, not from a receding architectural interior.
 
-Rendering finish: flat vector-illustration base with a fine, visible film-grain / halftone
-texture laid over every surface — this grain is the signature finish and must be present
-throughout, not just as an accent. Edges stay crisp and confidently outlined (typical sticker
-die-cut border), while fills stay flat with the grain doing the work of adding tactility. No
-gradients used as a substitute for the grain.
+Rendering finish: flat vector-illustration base with a fine, subtle film-grain / halftone
+texture as a light overall tooth — present across surfaces but restrained, closer to the
+grain in a printed sticker or riso print than a rough paper texture. Edges stay crisp and
+confidently outlined (typical clean sticker die-cut border), fills stay flat and smooth at a
+glance, with the grain only visible on close inspection. No gradients used as a substitute
+for the grain. The scene must read as a crisp, new, flat sticker sheet — never as worn,
+creased, crumpled, faded, or aged material.
 
 Palette — Whiteboard system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
 surface; Ink #0A0A0A for outlines, titles, and structural linework; Ink Faint #6A6A6A for
@@ -49,12 +54,12 @@ Brand Mint #A4D4C5, Brand Coral #FF6B5A. Do not introduce hues outside this set.
 
 Use colored ribbon-sticker connector strips (like a strip of washi tape or a colored sticker
 banner) to communicate data, orchestration, task movement, approvals, and system connections
-between elements. These connectors must read as flat sticker strips with grain, never as
-electrical cables, glowing digital light-trails, or hardware wiring.
+between elements. These connectors must read as flat sticker strips with the same light grain,
+never as electrical cables, glowing digital light-trails, or hardware wiring.
 
-Materials read as exactly one thing: matte vinyl sticker with grain texture and a die-cut
-outline. No glass, no resin, no glossy acrylic, no painted metal, no chrome, no 3D-rendered
-depth, no soft-shadow-heavy claymorphism.
+Materials read as exactly one thing: matte vinyl sticker with a light grain texture and a
+die-cut outline. No glass, no resin, no glossy acrylic, no painted metal, no chrome, no
+3D-rendered depth, no soft-shadow-heavy claymorphism.
 
 Place the exact uppercase title flat in clean upper-left negative space, styled as one large
 hero sticker or a flat title lockup with its own subtle outline. The title should occupy
@@ -65,11 +70,12 @@ circled word or arrow, in Brand Coral) may appear near the title as a secondary 
 accent, echoing the site's hand-marker system — never as the main title itself.
 
 Avoid glossy resin/acrylic rendering, painted metal, glass UI layers, deep 3/4 isometric room
-interiors, paper-craft/diorama cut-paper styling, botanical decoration, watercolor, cool
-blush-gray or neon rainbow palettes, dominant black backgrounds, cyberpunk, uncontrolled
-neon, generic corporate offices, humanoid robots, robot heads, circuit boards, electrical
-cables, plugs, switches, relays, server racks, industrial machinery, real logos, watermarks,
-garbled text, unrelated labels, decorative code, and fake data.
+interiors, paper-craft/diorama cut-paper styling, worn or crumpled or creased or faded
+texture, botanical decoration, watercolor, cool blush-gray or neon rainbow palettes, dominant
+black backgrounds, cyberpunk, uncontrolled neon, generic corporate offices, any human or
+humanoid figures, hands, robots, robot heads, circuit boards, electrical cables, plugs,
+switches, relays, server racks, industrial machinery, real logos, watermarks, garbled text,
+unrelated labels, decorative code, and fake data.
 
 Output: [DIMENSIONS AND ASPECT RATIO]. Recompose the sticker world specifically for that
 canvas; do not make a blind crop of another format.
@@ -89,21 +95,21 @@ canvas; do not make a blind crop of another format.
 - Primary direction: AI Builders Sticker-Sheet Software World.
 - Density policy: adaptive density with a minimum of multiple connected, overlapping sticker elements.
 - Depth comes from sticker overlap and layered shadow, not architectural recession.
-- Grain/film-texture must be visible across all surfaces, not just accents.
+- Grain/film-texture stays fine and subtle — a light tooth visible only on close inspection, never heavy, rough, or worn.
 - Keep a clear title zone and an interconnected sticker cluster as the visual core.
 - Use ribbon-sticker connectors for system movement; never electrical wiring or light-trails.
-- Keep sticker people precise, relevant, and subordinate to the software elements.
+- No human figures; suggest activity only through optional non-human markers (cursor, spinner, checkmark, motion-trail).
 
 ## Review Checklist
 
 - [ ] The scene reads as a layered sheet of die-cut stickers, not a 3D diorama or isometric room.
-- [ ] Film-grain texture is visible across the whole composition, not just one corner.
+- [ ] Film-grain is fine and subtle — visible only on close inspection; the sheet reads crisp and new, not worn, creased, or faded.
 - [ ] Adaptive density matches the topic without becoming sparse or empty.
 - [ ] The exact title occupies roughly 25-35% and reads at thumbnail size.
 - [ ] Only the 7 design.md accent hues appear, on the cream/soft base.
 - [ ] Ribbon-sticker connectors read as tape/sticker strips, not cables or glowing lines.
 - [ ] No glossy resin, glass, metal, or paper-craft diorama styling has crept back in.
-- [ ] No electronics, humanoid robots, logos, watermarks, or extra text.
+- [ ] No human or humanoid figures, hands, robots, electronics, logos, watermarks, or extra text.
 
 ## User Input
 
