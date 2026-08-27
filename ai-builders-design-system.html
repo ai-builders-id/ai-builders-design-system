@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Builders ID — Design System Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Surface — Clay */
+    --canvas:        #fffaf0;
+    --surface-soft:  #faf5e8;
+    --surface-card:  #f5f0e0;
+    --surface-strong:#ebe6d6;
+
+    /* Ink */
+    --ink:           #0a0a0a;
+    --ink-soft:      #3a3a3a;
+    --ink-faint:     #6a6a6a;
+    --on-dark:       #fffaf0;
+    --hairline-ink:  hsl(220 15% 18% / 0.14);
+    --hairline-flat: #e5e5e5;
+
+    /* Brand */
+    --pink:     #ff4d8b;
+    --teal:     #1a3a3a;
+    --lavender: #b8a4ed;
+    --peach:    #ffb084;
+    --ochre:    #e8b94a;
+    --mint:     #a4d4c5;
+    --coral:    #ff6b5a;
+
+    /* Sticky-note tints */
+    --note-yellow: #f2e1bf;
+    --note-green:  #dceae4;
+    --note-pink:   #f6dbe6;
+    --note-orange: #f8dcc8;
+    --note-blue:   #e6dff7;
+    --note-purple: #ddccf0;
+
+    --r-sketch: 2px 8px 4px 12px;
+    --r-sticky: 2px 8px 12px 4px;
+
+    --sketch-shadow: 2px 4px 10px hsl(220 15% 18% / 0.14);
+    --lift-shadow:   3px 6px 18px hsl(220 15% 18% / 0.20);
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink-soft);
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    background-image: radial-gradient(circle, hsl(220 15% 18% / 0.08) 1.2px, transparent 1.2px);
+    background-size: 24px 24px;
+  }
+
+  .hand { font-family: 'Permanent Marker', cursive; font-weight: 400; }
+
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---- Top banner ---- */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: hsl(42 60% 96% / 0.86);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid var(--ink);
+    padding: 16px 0;
+  }
+  .topbar .container { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .topbar .title { font-weight: 700; font-size: 17px; letter-spacing: -0.02em; color: var(--ink); }
+  .topbar .sub { font-size: 13px; color: var(--ink-faint); }
+
+  /* ---- Section shell ---- */
+  .section { padding: 72px 0; border-bottom: 2px dashed var(--hairline-ink); }
+  .section:last-child { border-bottom: none; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 12.5px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 10px;
+  }
+  .eyebrow .hand-tag {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px; letter-spacing: 0.01em; text-transform: none;
+    color: var(--coral);
+    transform: rotate(-2deg);
+  }
+  .section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(28px, 3.6vw, 42px);
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 1.05;
+    color: var(--ink);
+    margin: 0 0 10px;
+  }
+  .section .lead { font-size: 16px; color: var(--ink-faint); max-width: 640px; margin-bottom: 40px; }
+
+  /* ============ HERO ============ */
+  .hero { padding: 96px 0 72px; text-align: center; }
+  .hero .hand-tag {
+    display: inline-block;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 18px; color: var(--coral);
+    transform: rotate(-2deg);
+    margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(40px, 7vw, 84px);
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    line-height: 0.98;
+    color: var(--ink);
+    margin: 0 0 20px;
+  }
+  .hero h1 .accent { color: var(--coral); }
+  .hero p.sub { font-size: 19px; color: var(--ink-soft); max-width: 560px; margin: 0 auto; }
+
+  /* ============ COLOR SWATCHES ============ */
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+  .swatch {
+    border-radius: 16px;
+    border: 1px solid var(--hairline-flat);
+    overflow: hidden;
+    background: var(--surface-card);
+  }
+  .swatch .fill { height: 84px; }
+  .swatch .meta { padding: 10px 12px; }
+  .swatch .name { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .swatch .hex { font-size: 12px; color: var(--ink-faint); font-family: monospace; }
+
+  .swatch-group-label { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--ink-faint); margin: 32px 0 14px; }
+  .swatch-group-label:first-child { margin-top: 0; }
+
+  /* ============ TYPOGRAPHY ============ */
+  .type-row { display: flex; align-items: baseline; gap: 24px; padding: 18px 0; border-top: 1px solid var(--hairline-flat); flex-wrap: wrap; }
+  .type-row:last-child { border-bottom: 1px solid var(--hairline-flat); }
+  .type-row .label { flex: 0 0 170px; font-size: 12px; font-family: monospace; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.5px; }
+  .type-row .sample { color: var(--ink); }
+  .t-hero { font-size: clamp(32px, 5vw, 56px); font-weight: 700; letter-spacing: -2px; line-height: 1; }
+  .t-lg { font-size: clamp(26px, 3.4vw, 38px); font-weight: 600; letter-spacing: -1px; line-height: 1.05; }
+  .t-md { font-size: 26px; font-weight: 600; letter-spacing: -0.5px; }
+  .t-title { font-size: 20px; font-weight: 600; }
+  .t-body-lg { font-size: 19px; font-weight: 400; }
+  .t-body { font-size: 16px; font-weight: 400; }
+  .t-mono { font-size: 12.5px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-family: monospace; }
+  .t-hand { font-family: 'Permanent Marker', cursive; font-size: 22px; color: var(--coral); }
+
+  /* ============ STICKY NOTES ============ */
+  .notes-row { display: flex; flex-wrap: wrap; gap: 22px; }
+  .sticky {
+    position: relative;
+    width: 190px;
+    border-radius: var(--r-sticky);
+    box-shadow: var(--sketch-shadow);
+    padding: 20px 20px 24px;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .sticky:hover { transform: rotate(0deg) scale(1.04); box-shadow: var(--lift-shadow); }
+  .sticky::before {
+    content: "";
+    position: absolute; top: -11px; left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 70px; height: 20px;
+    background: hsl(42 45% 88% / 0.8);
+    border: 1px solid hsl(39 25% 70% / 0.6);
+    border-radius: 2px;
+  }
+  .sticky h4 { font-family: 'Permanent Marker', cursive; font-weight: 400; font-size: 18px; margin: 0 0 8px; color: var(--ink); }
+  .sticky p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .n1 { background: var(--note-yellow); transform: rotate(-3deg); }
+  .n2 { background: var(--note-green);  transform: rotate(2deg); }
+  .n3 { background: var(--note-pink);   transform: rotate(-1.5deg); }
+  .n4 { background: var(--note-blue);   transform: rotate(2.5deg); }
+  .n5 { background: var(--note-orange); transform: rotate(-2deg); }
+  .n6 { background: var(--note-purple); transform: rotate(1.5deg); }
+  .n7 { background: var(--teal); color: var(--on-dark); transform: rotate(-1deg); }
+  .n7 h4, .n7 p { color: var(--on-dark); }
+
+  /* ============ BUTTONS / PILLS ============ */
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700; font-size: 15px;
+    padding: 12px 22px;
+    border: 2px solid var(--ink);
+    border-radius: var(--r-sketch);
+    background: var(--ink);
+    color: var(--canvas);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover { transform: scale(1.05); box-shadow: var(--lift-shadow); }
+  .btn-ghost { background: transparent; color: var(--ink); }
+  .btn-coral    { background: var(--coral);    border-color: var(--coral);    color: #fff; }
+  .btn-lavender { background: var(--lavender); border-color: var(--lavender); color: var(--ink); }
+  .btn-mint     { background: var(--mint);     border-color: var(--mint);     color: var(--ink); }
+  .btn-clean    { border-radius: 12px; }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 12.5px; font-weight: 600;
+    padding: 6px 14px;
+    border: 1.5px solid var(--ink);
+    border-radius: 9999px;
+    background: var(--surface-card);
+    color: var(--ink);
+  }
+  .pill-coral    { border-color: var(--coral);    color: var(--coral);    background: hsl(6 100% 68% / 0.08); }
+  .pill-lavender { border-color: var(--lavender); color: #6d4fd6;         background: hsl(258 64% 81% / 0.15); }
+  .pill-mint     { border-color: var(--mint);     color: #2f7a5e;         background: hsl(157 35% 74% / 0.2); }
+
+  .hl { padding: 0 2px; }
+  .hl-coral    { background-image: linear-gradient(120deg, hsl(6 100% 68% / 0.35), hsl(6 100% 68% / 0.35));  background-repeat: no-repeat; background-position: 0 78%; background-size: 100% 42%; }
+  .hl-lavender { background-image: linear-gradient(120deg, hsl(258 64% 81% / 0.55), hsl(258 64% 81% / 0.55)); background-repeat: no-repeat; background-position: 0 78%; background-size: 100% 42%; }
+  .hl-ochre    { background-image: linear-gradient(120deg, hsl(42 76% 61% / 0.5), hsl(42 76% 61% / 0.5));  background-repeat: no-repeat; background-position: 0 78%; background-size: 100% 42%; }
+
+  /* ============ FEATURE CARDS (Clay-style, flat) ============ */
+  .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 860px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature-card {
+    border-radius: 24px;
+    padding: 32px;
+  }
+  .feature-card h3 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; margin: 0 0 10px; }
+  .feature-card p { font-size: 14.5px; margin: 0; opacity: 0.85; }
+  .fc-pink     { background: var(--pink);     color: #fff; }
+  .fc-teal     { background: var(--teal);     color: var(--on-dark); }
+  .fc-lavender { background: var(--lavender); color: var(--ink); }
+  .fc-peach    { background: var(--peach);    color: var(--ink); }
+  .fc-ochre    { background: var(--ochre);    color: var(--ink); }
+  .fc-cream    { background: var(--surface-card); color: var(--ink); border: 1px solid var(--hairline-flat); }
+
+  /* ============ SHAPES COMPARISON ============ */
+  .shape-row { display: flex; gap: 24px; flex-wrap: wrap; }
+  .shape-box {
+    width: 160px; height: 110px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-family: monospace; text-align: center; padding: 10px;
+    background: var(--surface-card);
+    border: 1.5px solid var(--ink);
+  }
+  .shape-sketch { border-radius: var(--r-sketch); }
+  .shape-sticky { border-radius: var(--r-sticky); }
+  .shape-8  { border-radius: 8px; }
+  .shape-12 { border-radius: 12px; }
+  .shape-16 { border-radius: 16px; }
+  .shape-24 { border-radius: 24px; }
+  .shape-pill { border-radius: 9999px; padding: 10px 24px; height: auto; width: auto; }
+
+  /* ============ CTA BAND ============ */
+  .cta-band {
+    background: var(--surface-soft);
+    border-radius: 24px;
+    padding: 64px 40px;
+    text-align: center;
+  }
+  .cta-band h2 { margin-bottom: 14px; }
+  .cta-band p { color: var(--ink-faint); margin-bottom: 26px; }
+
+  /* ============ FOOTER ============ */
+  footer { background: var(--surface-soft); padding: 40px 0; text-align: center; font-size: 13px; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span class="title">AI Builders ID — Design System Preview</span>
+      <span class="sub">Whiteboard visual language × Clay color × Cohere typography</span>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <span class="hand-tag">— live token preview</span>
+    <h1>Editorial <span class="accent">War Room.</span></h1>
+    <p class="sub">Cream canvas, saturated Clay hues, and monumental Space Grotesk headlines — with the sticky notes, tape, and dot-grid still intact.</p>
+  </section>
+
+  <!-- COLORS -->
+  <section class="section container">
+    <div class="eyebrow"><span>Colors</span><span class="hand-tag">warna dari Clay</span></div>
+    <h2>Palette</h2>
+    <p class="lead">6 brand hues drive both the sticky-note system and the flat feature cards below.</p>
+
+    <div class="swatch-group-label">Brand & Accent</div>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="fill" style="background:var(--ink)"></div><div class="meta"><div class="name" style="color:#fff">Ink / Primary</div><div class="hex">#0a0a0a</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--pink)"></div><div class="meta"><div class="name">Brand Pink</div><div class="hex">#ff4d8b</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--teal)"></div><div class="meta"><div class="name">Brand Teal</div><div class="hex">#1a3a3a</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--lavender)"></div><div class="meta"><div class="name">Brand Lavender</div><div class="hex">#b8a4ed</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--peach)"></div><div class="meta"><div class="name">Brand Peach</div><div class="hex">#ffb084</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--ochre)"></div><div class="meta"><div class="name">Brand Ochre</div><div class="hex">#e8b94a</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--mint)"></div><div class="meta"><div class="name">Brand Mint</div><div class="hex">#a4d4c5</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--coral)"></div><div class="meta"><div class="name">Brand Coral</div><div class="hex">#ff6b5a</div></div></div>
+    </div>
+
+    <div class="swatch-group-label">Surface</div>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="fill" style="background:var(--canvas); border-bottom:1px solid var(--hairline-flat)"></div><div class="meta"><div class="name">Canvas</div><div class="hex">#fffaf0</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--surface-soft); border-bottom:1px solid var(--hairline-flat)"></div><div class="meta"><div class="name">Surface Soft</div><div class="hex">#faf5e8</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--surface-card); border-bottom:1px solid var(--hairline-flat)"></div><div class="meta"><div class="name">Surface Card</div><div class="hex">#f5f0e0</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--surface-strong); border-bottom:1px solid var(--hairline-flat)"></div><div class="meta"><div class="name">Surface Strong</div><div class="hex">#ebe6d6</div></div></div>
+    </div>
+
+    <div class="swatch-group-label">Sticky-Note Tints</div>
+    <div class="swatch-grid">
+      <div class="swatch"><div class="fill" style="background:var(--note-yellow)"></div><div class="meta"><div class="name">Note Yellow</div><div class="hex">#f2e1bf</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--note-green)"></div><div class="meta"><div class="name">Note Green</div><div class="hex">#dceae4</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--note-pink)"></div><div class="meta"><div class="name">Note Pink</div><div class="hex">#f6dbe6</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--note-orange)"></div><div class="meta"><div class="name">Note Orange</div><div class="hex">#f8dcc8</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--note-blue)"></div><div class="meta"><div class="name">Note Blue</div><div class="hex">#e6dff7</div></div></div>
+      <div class="swatch"><div class="fill" style="background:var(--note-purple)"></div><div class="meta"><div class="name">Note Purple</div><div class="hex">#ddccf0</div></div></div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="section container">
+    <div class="eyebrow"><span>Typography</span><span class="hand-tag">skala dari Cohere</span></div>
+    <h2>Hierarchy</h2>
+    <p class="lead">Space Grotesk carries every headline at Cohere's tight, monumental scale. Permanent Marker is reserved for annotations only.</p>
+
+    <div class="type-row"><div class="label">display-hero / 700</div><div class="sample t-hero">Go to market, on a board.</div></div>
+    <div class="type-row"><div class="label">display-lg / 600</div><div class="sample t-lg">Section headline sits here</div></div>
+    <div class="type-row"><div class="label">display-md / 600</div><div class="sample t-md">Sub-section heading</div></div>
+    <div class="type-row"><div class="label">title-lg / 600</div><div class="sample t-title">Card & pricing title</div></div>
+    <div class="type-row"><div class="label">body-lg / 400</div><div class="sample t-body-lg">Lead paragraph text sits comfortably at this size.</div></div>
+    <div class="type-row"><div class="label">body-md / 400</div><div class="sample t-body">Default running text for the whole site lives here.</div></div>
+    <div class="type-row"><div class="label">mono-label / 600</div><div class="sample t-mono">Eyebrow Label — Uppercase</div></div>
+    <div class="type-row"><div class="label">hand-tag (annotation)</div><div class="sample t-hand">← written by hand, on purpose</div></div>
+  </section>
+
+  <!-- STICKY NOTES -->
+  <section class="section container">
+    <div class="eyebrow"><span>Components</span><span class="hand-tag">tetep dipertahankan!</span></div>
+    <h2>Sticky Notes</h2>
+    <p class="lead">Same tape-and-shadow system as before — recolored with Clay-derived tints. Hover to lift.</p>
+    <div class="notes-row">
+      <div class="sticky n1"><h4>Kickoff</h4><p>Onboarding checklist buat member baru.</p></div>
+      <div class="sticky n2"><h4>Growth</h4><p>Tracking komunitas & retensi mingguan.</p></div>
+      <div class="sticky n3"><h4>Demo Day</h4><p>Showcase project dari builder minggu ini.</p></div>
+      <div class="sticky n4"><h4>Resource</h4><p>Link, template, dan cheat sheet AI tools.</p></div>
+      <div class="sticky n5"><h4>Feedback</h4><p>Notes dari sesi review komunitas.</p></div>
+      <div class="sticky n6"><h4>Ide Baru</h4><p>Brainstorm fitur & event berikutnya.</p></div>
+      <div class="sticky n7"><h4>★ Pinned</h4><p>Highlight utama minggu ini — teal, dipakai sparingly.</p></div>
+    </div>
+  </section>
+
+  <!-- BUTTONS / PILLS / HIGHLIGHTER -->
+  <section class="section container">
+    <div class="eyebrow"><span>Components</span></div>
+    <h2>Buttons, Pills &amp; Highlighter</h2>
+    <p class="lead">Marker red/blue/green retired — coral, lavender, and mint carry those roles now.</p>
+
+    <div class="row" style="margin-bottom:28px;">
+      <a class="btn" href="#">Gabung Komunitas</a>
+      <a class="btn btn-ghost" href="#">Pelajari Lebih Lanjut</a>
+      <a class="btn btn-coral" href="#">Daftar Sekarang</a>
+      <a class="btn btn-lavender" href="#">Lihat Event</a>
+      <a class="btn btn-mint" href="#">Mulai Belajar</a>
+      <a class="btn btn-clean" href="#">Clean-zone Button</a>
+    </div>
+
+    <div class="row" style="margin-bottom:28px;">
+      <span class="pill">● Default Pill</span>
+      <span class="pill pill-coral">● Urgent</span>
+      <span class="pill pill-lavender">● Featured</span>
+      <span class="pill pill-mint">● New</span>
+    </div>
+
+    <p class="t-body">Teks biasa bisa <span class="hl hl-coral">di-highlight warna coral</span>, atau <span class="hl hl-lavender">lavender</span>, atau <span class="hl hl-ochre">ochre</span> — pengganti langsung dari marker merah/biru/kuning yang lama.</p>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="section container">
+    <div class="eyebrow"><span>Components</span><span class="hand-tag">baru, ala Clay</span></div>
+    <h2>Feature Cards (flat zone)</h2>
+    <p class="lead">No shadow, 24px radius, cycling through the 6 brand hues — for product/pricing/trust sections.</p>
+    <div class="feature-grid">
+      <div class="feature-card fc-pink"><h3>Sequencer</h3><p>Outbound flow otomatis buat cohort baru, langsung dari board.</p></div>
+      <div class="feature-card fc-teal"><h3>Enterprise</h3><p>Paket khusus partner & sponsor komunitas.</p></div>
+      <div class="feature-card fc-lavender"><h3>AI Agent</h3><p>Bot Discord yang jawab pertanyaan onboarding otomatis.</p></div>
+      <div class="feature-card fc-peach"><h3>Mentoring</h3><p>Sesi 1-on-1 sama mentor tiap dua minggu.</p></div>
+      <div class="feature-card fc-ochre"><h3>Komunitas</h3><p>Diskusi harian, sharing project, dan demo day.</p></div>
+      <div class="feature-card fc-cream"><h3>Resource Hub</h3><p>Kumpulan template & cheat sheet, versi ringan.</p></div>
+    </div>
+  </section>
+
+  <!-- SHAPES -->
+  <section class="section container">
+    <div class="eyebrow"><span>Shapes</span></div>
+    <h2>Two Radius Systems</h2>
+    <p class="lead">Wonky for hand-drawn zones, clean for product/trust zones — never mixed.</p>
+    <div class="shape-row">
+      <div class="shape-box shape-sketch">r-sketch<br>2 8 4 12</div>
+      <div class="shape-box shape-sticky">r-sticky<br>2 8 12 4</div>
+      <div class="shape-box shape-8">8px</div>
+      <div class="shape-box shape-12">12px</div>
+      <div class="shape-box shape-16">16px</div>
+      <div class="shape-box shape-24">24px</div>
+      <div class="shape-box shape-pill">pill</div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section container">
+    <div class="cta-band">
+      <div class="eyebrow" style="justify-content:center;"><span>Closing</span></div>
+      <h2>Siap gabung war room-nya?</h2>
+      <p>Cream footer, no dark section — semua sistem udah setuju soal ini.</p>
+      <a class="btn" href="#">Gabung Sekarang</a>
+    </div>
+  </section>
+
+  <footer>
+    AI Builders ID — Design System Preview · design.md v1
+  </footer>
+
+</body>
+</html>
