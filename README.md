@@ -101,9 +101,11 @@ Clay is a focal layer, not a card treatment. Prefer one clay moment per page, pr
 
 - [`ai-builders-design-system.md`](./ai-builders-design-system.md) — complete specification, tokens, components, responsive behavior, migration notes, and illustration architecture
 - [`ai-builders-design-system.html`](./ai-builders-design-system.html) — live visual preview of the core language and components
-- [`illustrations-stickers.md`](./illustrations-stickers.md) — sticker anatomy, composition, texture, motion translation, production decisions, and master prompt
-- [`illustrations-clay-keyboard.md`](./illustrations-clay-keyboard.md) — keyboard-specific clay art direction, material/form rules, motion behavior, and production prompt
-- [`illustrations-clay-ai-agents.md`](./illustrations-clay-ai-agents.md) — AI-agent workshop art direction, concept grammar, spatial narrative, motion sequence, and production prompt
+- [`illustrations-stickers.md`](./illustrations-stickers.md) — shared Sticker art direction, composition system, material rules, and motion language
+- [`illustrations-stickers-software-world.md`](./illustrations-stickers-software-world.md) — software-world Sticker study and production prompt
+- [`illustrations-clay.md`](./illustrations-clay.md) — shared Clay art direction, material signature, color, camera, lighting, and motion language
+- [`illustrations-clay-keyboard.md`](./illustrations-clay-keyboard.md) — keyboard-specific Clay study and production prompt
+- [`illustrations-clay-ai-agents.md`](./illustrations-clay-ai-agents.md) — AI-agent workshop Clay study and production prompt
 
 ## Starting a New Section
 

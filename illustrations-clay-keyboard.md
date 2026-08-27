@@ -1,6 +1,9 @@
-# AI Builders Clay Keyboard
+# AI Builders Clay Keyboard — Study
 
-## Art Direction
+This study applies `illustrations-clay.md` to a complete keyboard. Subject-specific tension:
+**manufactured grid versus hand-shaped keycaps**.
+
+## Study Direction
 
 ### Creative Thesis
 

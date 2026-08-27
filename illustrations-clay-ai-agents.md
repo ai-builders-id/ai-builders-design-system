@@ -1,6 +1,9 @@
-# AI Builders Clay AI-Agent Workshop
+# AI Builders Clay AI-Agent Workshop — Study
 
-## Art Direction
+This study applies `illustrations-clay.md` to agent-building as an instruction-to-proof
+workshop. Subject-specific tension: **complex orchestration made tangible through craft**.
+
+## Study Direction
 
 ### Creative Thesis
 
