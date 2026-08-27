@@ -1,4 +1,158 @@
-# AI Builders Sticker-Sheet Software World — Master Prompt
+# AI Builders Sticker-Sheet Software World
+
+## Creative Thesis
+
+The sticker system turns invisible software behavior into a physical editorial map. It should
+feel like a builder has unpacked a system onto a cream board, separated its parts, and pinned
+their relationships into view. The result is explanatory rather than decorative: every
+sticker names a role through shape, placement, or connection even when it contains no text.
+
+The signature tension is **software precision inside handmade assembly**. Windows, queues,
+databases, and checkpoints remain geometrically legible, while die cuts, rotations, overlap,
+grain, and ribbon paths keep the composition tactile and human.
+
+## Visual Study
+
+### 1. Sticker Anatomy
+
+Every object uses the same three-part construction:
+
+1. **Graphic core** — a flat, simplified software form with a decisive silhouette.
+2. **Die-cut rim** — a consistent cream or white border, approximately 3-5% of the object's
+   shortest dimension. Internal gaps do not receive a second rim.
+3. **Contact shadow** — a short, soft, neutral shadow that separates layers without turning
+   them into floating cards. Shadow direction stays consistent across the sheet.
+
+Edges may be subtly irregular, but never torn, fuzzy, curled, distressed, or visibly aged.
+The sticker is newly printed and confidently cut.
+
+### 2. Shape Language
+
+- Browser and application surfaces use broad rectangles with lightly softened corners.
+- Data stores use stacked discs, trays, or compact cylinders flattened toward icon language.
+- Agent stations use hubs, nodes, or workbenches; never faces, bodies, or robot heads.
+- Approvals and completion use stamps, gates, checks, and closed loops.
+- Inputs are open shapes; processing is clustered or circular; outputs are consolidated,
+  stable shapes. This creates a visual grammar from start to finish.
+- Small status pieces may be rounder and more playful than primary structural stickers.
+
+Do not reuse one generic rounded rectangle for every role. A viewer should distinguish the
+system's nouns from silhouette before inspecting their details.
+
+### 3. Layer and Overlap
+
+Use three explicit depth bands:
+
+- **Board layer** — cream field and optional faint registration marks.
+- **System layer** — the main software objects and connector ribbons.
+- **Annotation layer** — hero title sticker or lockup, checks, cursor, spinner, marker arrow,
+  or small status tabs.
+
+Primary stickers may overlap by 8-18% of their area. Overlap should reveal dependency or
+sequence, not merely fill space. Keep important silhouettes and connection endpoints visible.
+Avoid stacks deeper than three stickers; beyond that, the system becomes collage rather than
+explanation.
+
+### 4. Connector Behavior
+
+Ribbon connectors are active compositional elements, not background lines.
+
+- Give each ribbon a clear origin and destination.
+- Let it pass under one object and over another to establish system order.
+- Use broad bends and one or two direction changes; avoid tangled spaghetti paths.
+- Match ribbon width to hierarchy: primary flow is widest, supporting flow narrower.
+- End ribbons with a tucked edge, arrow-like cut, or clean contact point.
+- Use color to distinguish stages, not to imply electronics or emitted light.
+
+At thumbnail size, the main route through the system should still be traceable.
+
+### 5. Density and Hierarchy
+
+Build compositions from three scales:
+
+- **Hero scale** — title plus one dominant system object or cluster.
+- **Working scale** — 3-7 supporting software objects that explain the topic.
+- **Signal scale** — small statuses, nodes, tabs, and annotations used sparingly.
+
+Simple subjects should not become sparse icon sheets. Use fewer objects but enlarge their
+relationships and overlap. Complex subjects can become dense, but must preserve one dominant
+route, 10-20% calm space around the title, and at least one visual pause inside the cluster.
+
+### 6. Texture and Print Finish
+
+Grain exists to unify the sheet, not to simulate damage. Use a fine monochrome tooth across
+large fills, slightly stronger in shadows and broad color areas. Halftone may appear in one
+or two secondary surfaces, but never across every object. Keep color registration clean;
+occasional sub-pixel imperfection is acceptable, obvious misprint effects are not.
+
+### 7. Camera and Framing
+
+The canonical camera is flat-on. A tilt of up to roughly 8 degrees is acceptable when it
+helps overlaps read, but verticals should remain mostly stable. The sheet is not an
+architectural space: no horizon, floor-wall junction, deep perspective, or isometric room.
+
+Recompose by format:
+
+- **16:9 cover** — title anchors the upper-left; flow travels horizontally or diagonally.
+- **4:5 social** — title and system cluster stack vertically with a compact S-curve flow.
+- **1:1 tile** — central cluster wraps around a protected title block; avoid edge cropping.
+- **Presentation opener** — fewer, larger stickers with stronger negative space.
+
+### 8. Controlled Imperfection
+
+Use imperfection at the assembly level: 1-4 degree rotations, slightly varied border widths,
+offset overlap, and a hand-placed rhythm. Keep the software diagrams themselves clear and
+internally aligned. If everything is crooked, nothing feels intentionally handmade.
+
+## Composition Archetypes
+
+Choose one archetype before generating:
+
+- **Pipeline** — an input-to-output route for workflows, automation, deployment, and agents.
+- **Constellation** — one central platform connected to several capabilities or services.
+- **Workbench** — tools and active surfaces gathered around a task for tutorials or building.
+- **Before / after bridge** — two states linked by a dominant transformation ribbon.
+- **Layer stack** — interface, orchestration, data, and infrastructure shown as overlapping
+  horizontal bands rather than a literal technical diagram.
+
+Do not mix archetypes unless the subject genuinely requires it.
+
+## Motion Translation
+
+The base artwork is static. When adapted to motion, preserve the sticker metaphor:
+
+- Stickers enter through short peel-and-place movement, not elastic UI springing.
+- Connector ribbons reveal from origin to destination with a slightly uneven leading edge.
+- Status markers may stamp, rotate once, or settle by 1-2 degrees.
+- Use one ordered reveal through the system; avoid perpetual ambient motion everywhere.
+- End on a composition identical to the static poster frame.
+- Reduced-motion output uses the final poster without losing meaning.
+
+## Failure Modes
+
+- **Icon confetti** — many isolated symbols with no system relationship.
+- **Card dashboard** — uniform UI rectangles arranged in a clean product grid.
+- **Isometric diorama** — depth comes from a room or miniature architecture.
+- **Scrapbook nostalgia** — torn paper, curled edges, stains, fading, or vintage distress.
+- **Cable diagram** — thin glowing lines, circuit traces, plugs, or hardware language.
+- **Material drift** — gloss, resin, glass, clay, chrome, or volumetric 3D lighting.
+- **Hierarchy collapse** — title, nodes, and annotations all compete at the same scale.
+- **Decorative complexity** — fake text, code, metrics, or controls added only to look busy.
+
+## Production Decisions
+
+Before using the prompt, define:
+
+| Decision | Required input |
+|---|---|
+| Communication job | Cover, explainer, opener, social tile, background, or infographic |
+| Core message | One sentence the viewer should understand |
+| Archetype | Pipeline, constellation, workbench, bridge, or layer stack |
+| Hero object | The one software form carrying the concept |
+| Main route | The relationship visible at thumbnail size |
+| Density | Open, balanced, or dense |
+| Title | Exact supplied wording |
+| Output | Exact dimensions and aspect ratio |
 
 ## Master Prompt
 
@@ -15,8 +169,9 @@ rendered as if it were a sheet of die-cut vinyl stickers layered and slightly ov
 a soft cream surface. Build the scene from physicalized browser windows, application panels,
 dashboards, workflow nodes, agent stations, task queues, databases, API gateways, approval
 gates, testing checkpoints, deployment lanes, monitoring panels, and completed output
-surfaces — each element rendered as its own die-cut sticker shape with a clean white or ink
-outline edge and a soft cast shadow, as if peeled and stuck slightly askew. Use only the
+surfaces — each element rendered as its own die-cut sticker shape with a clean cream or white
+border, optional Ink linework inside that border, and a soft cast shadow, as if peeled and
+stuck slightly askew. Use only the
 components relevant to the topic.
 
 Use adaptive density. A simple topic may use fewer zones, but must still contain multiple

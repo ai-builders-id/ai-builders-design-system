@@ -80,6 +80,13 @@ Do not blend both shape languages inside one component. Alternate zones at secti
 
 Clay is a focal layer, not a card treatment. Prefer one clay moment per page, preserve a stable poster for reduced motion, and use stickers for supporting explanation.
 
+### Illustration direction in practice
+
+- **Sticker study:** build every object from a graphic core, die-cut rim, and short contact shadow. Choose one composition archetype—pipeline, constellation, workbench, bridge, or layer stack—before adding detail. Relationships must remain traceable at thumbnail size.
+- **Clay art direction:** preserve recognizable silhouettes, then introduce selective thumb dents, pinched edges, compression, and uneven placement. Material behavior carries the handmade quality; random clutter does not.
+- **Motion:** sticker motion follows peel, place, reveal, and stamp actions. Clay motion uses slow compression, drag, settling, and retained dents. Both end on a complete static poster and remain meaningful with reduced motion.
+- **Shared constraint:** no humanoid agents, decorative electronics, invented text, uncontrolled color, or material mixing inside one illustration or object. Sticker and clay may still appear as separate moments on the same page. Teal remains a single featured signal.
+
 ## Non-Negotiable Signatures
 
 - Warm cream canvas and subtle dot-grid
@@ -94,9 +101,9 @@ Clay is a focal layer, not a card treatment. Prefer one clay moment per page, pr
 
 - [`ai-builders-design-system.md`](./ai-builders-design-system.md) — complete specification, tokens, components, responsive behavior, migration notes, and illustration architecture
 - [`ai-builders-design-system.html`](./ai-builders-design-system.html) — live visual preview of the core language and components
-- [`illustrations-stickers.md`](./illustrations-stickers.md) — static sticker-sheet art direction
-- [`illustrations-clay-keyboard.md`](./illustrations-clay-keyboard.md) — clay keyboard material and motion study
-- [`illustrations-clay-ai-agents.md`](./illustrations-clay-ai-agents.md) — clay AI-agent material and motion study
+- [`illustrations-stickers.md`](./illustrations-stickers.md) — sticker anatomy, composition, texture, motion translation, production decisions, and master prompt
+- [`illustrations-clay-keyboard.md`](./illustrations-clay-keyboard.md) — keyboard-specific clay art direction, material/form rules, motion behavior, and production prompt
+- [`illustrations-clay-ai-agents.md`](./illustrations-clay-ai-agents.md) — AI-agent workshop art direction, concept grammar, spatial narrative, motion sequence, and production prompt
 
 ## Starting a New Section
 
