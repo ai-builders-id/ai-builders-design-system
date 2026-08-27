@@ -40,7 +40,7 @@ throughout, not just as an accent. Edges stay crisp and confidently outlined (ty
 die-cut border), while fills stay flat with the grain doing the work of adding tactility. No
 gradients used as a substitute for the grain.
 
-Palette — Whiteboard system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
+Palette — Whiteboard / Clay system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
 surface; Ink #0A0A0A for outlines, titles, and structural linework; Ink Faint #6A6A6A for
 secondary sticker details and grain shadow. Use controlled but clearly visible accent hues on
 focal stickers, panels, workflow nodes, and status details, drawn only from: Brand Pink
@@ -54,7 +54,7 @@ electrical cables, glowing digital light-trails, or hardware wiring.
 
 Materials read as exactly one thing: matte vinyl sticker with grain texture and a die-cut
 outline. No glass, no resin, no glossy acrylic, no painted metal, no chrome, no 3D-rendered
-depth, no soft, puffy 3D-bevel styling.
+depth, no soft-shadow-heavy claymorphism.
 
 Place the exact uppercase title flat in clean upper-left negative space, styled as one large
 hero sticker or a flat title lockup with its own subtle outline. The title should occupy
