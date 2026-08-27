@@ -40,7 +40,7 @@ throughout, not just as an accent. Edges stay crisp and confidently outlined (ty
 die-cut border), while fills stay flat with the grain doing the work of adding tactility. No
 gradients used as a substitute for the grain.
 
-Palette — Whiteboard / Clay system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
+Palette — Whiteboard system: Canvas Cream #FFFAF0 and Surface Soft #FAF5E8 as the base
 surface; Ink #0A0A0A for outlines, titles, and structural linework; Ink Faint #6A6A6A for
 secondary sticker details and grain shadow. Use controlled but clearly visible accent hues on
 focal stickers, panels, workflow nodes, and status details, drawn only from: Brand Pink
