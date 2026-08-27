@@ -198,6 +198,57 @@ Unchanged breakpoints, existing collapsing strategy stays:
 5. Reserve teal (`{colors.brand-teal}`) for one "featured" element per section, max.
 6. Keep dot-grid + tape + rough-underline on every page — they're non-negotiable brand signature, same status as the cream canvas or the tight display tracking.
 
+## Illustration Architecture
+
+The illustration system has two deliberate layers around the core UI. They share the same
+cream canvas, ink, accent palette, and anti-gloss restraint, but they serve different jobs:
+
+| Layer | Job | Default behavior | Typical formats |
+|---|---|---|---|
+| **Sticker — Explain** | Clarify a topic, workflow, or product relationship | Static; optional short entrance reveal | SVG, WebP, PNG |
+| **Clay — Animate** | Give the brand a sense of life, tactility, and making | Looping motion or user-controlled 3D | WebM, MP4, GLB |
+| **UI — Operate** | Let users read, decide, and take action | Functional and accessible | HTML, CSS, JS |
+
+### Sticker Layer — Explain
+
+Use sticker illustrations as static visual assets that feel physically attached to the page.
+They belong beside copy, inside article covers, in feature explanations, and around workflow
+diagrams. Keep the canonical flat-on or slight top-down view, die-cut outline, restrained
+grain, small rotation, and soft cast shadow. Sticker density should follow topic complexity,
+but the title zone and system relationships must remain legible at thumbnail size.
+
+Stickers may use a subtle entrance reveal or hover lift, but they should settle quickly. Do
+not add continuous motion that makes a sticker stop reading as a pinned artifact.
+
+### Clay Layer — Animate
+
+Use clay for curated focal moments: a hero centerpiece, a section opener, a transition, or a
+product showcase. Clay is a living material layer, not a replacement for the flat UI and not
+an invitation to turn cards into claymorphism. Keep the matte kneaded-putty material, visible
+asymmetry, fingerprint dents, soft diffuse lighting, and the approved palette from the clay
+guides.
+
+Motion should feel handmade rather than mechanically perfect. Favor breathing deformation,
+soft settling, a keypress-and-release, an imperfect gear turn, or a putty ribbon carrying
+flow. Avoid perpetual 360-degree product spins, glossy highlights, hard reflections, and
+high-frequency movement. Default to one focal clay scene per page; use stickers for the
+supporting explanation around it.
+
+### Placement, Delivery, and Fallback
+
+- Keep clay outside dense text and control regions so motion never competes with comprehension or action.
+- Respect `prefers-reduced-motion`: replace loops and interactive rotation with the first stable frame or a static sticker fallback.
+- Provide an accessible text alternative for the concept shown; decorative clay can use an empty alt attribute.
+- Prefer poster-backed WebM/MP4 for ambient motion and lazy-load below-the-fold assets. Load GLB only when rotation materially improves understanding.
+- Target one lightweight clay asset per viewport and keep the initial poster/fallback visible until the media is ready.
+- Keep sticker assets exportable at 1x/2x with transparent edges; do not bake page background colors into the asset.
+
+### Decision Rule
+
+> If an illustration helps the user **understand** something, use Sticker. If it helps the user
+> **feel** the energy and life of the brand, use Clay. The UI layer remains responsible for
+> operation and accessibility.
+
 ## Migration Notes (old token → new token)
 
 | Old | New |
@@ -217,4 +268,4 @@ Unchanged breakpoints, existing collapsing strategy stays:
 - Exact pastel hex values in the Sticky-Note table are computed approximations (same-hue tint at note-lightness) — fine-tune by eye once implemented against the actual `#fffaf0` canvas.
 - This doc doesn't re-derive every existing micro-component (`.font-hand`, `.container`, scrollbar styling, `.reveal` animation) — those are unaffected and carry over unchanged.
 - The mono-label / eyebrow pairing pattern is new and untested on this site — worth a quick visual QA pass on one section before rolling out everywhere.
-- Illustration style (any custom SVG/doodle assets beyond CSS-driven sticky notes and dot-grid) isn't covered — heavily rendered 3D illustrations are explicitly **not** adopted here; this system stays flat/CSS-drawn, consistent with the existing site.
+- Detailed sticker asset specs live in `illustrations-stickers.md`; clay material specs live in `illustrations-clay-keyboard.md` and `illustrations-clay-ai-agents.md`. Motion timing, media encoding, and final asset budgets should be validated during implementation.

@@ -12,6 +12,9 @@ tight-tracking editorial hierarchy.
 - [`ai-builders-design-system.md`](./ai-builders-design-system.md) — the full spec: overview, colors,
   typography, layout, elevation, shapes, components, do's & don'ts, responsive behavior, iteration
   guide, and migration notes.
+- `illustrations-stickers.md` — static sticker-sheet illustration guide (`Sticker — Explain`).
+- `illustrations-clay-keyboard.md` and `illustrations-clay-ai-agents.md` — clay material studies
+  for motion/3D assets (`Clay — Animate`).
 
 ## Highlights
 
@@ -24,9 +27,12 @@ tight-tracking editorial hierarchy.
   annotation-only (tags, sticky-note handwriting, doodles).
 - **Section rhythm** opens from 72px to 96px.
 - Dot-grid, tape, and rough-underline highlighter are preserved as the tactile signature.
+- **Illustration architecture** separates static explanatory stickers from curated, living clay
+  moments; the UI remains the functional and accessible layer.
 
 ## Usage
 
 Start any new section by deciding its zone — **playful/community** (sticky notes, sketch-border,
 wonky radius) or **product/trust** (feature-card-flat, cta-band, clean radius) — then follow the
-Iteration Guide in the spec.
+Iteration Guide in the spec. For custom visuals, apply the decision rule: use **Sticker** to
+explain and **Clay** to animate.
